@@ -27,15 +27,14 @@ button {
 	<form>
 		<div>
 			<selct name = "s1">
-      			<input id="r1" type="radio" name="s1" value=<%= "one".equals(s1) ? "one " +  "checked" : "" %> /> 
-      			<label for="r1">one</label>
+      			<input id="r1" type="radio" name="s1" value="one" checked/> 
+      			<label for="s1">one</label>
       
-      			<input id="r2" type="radio" name="s1" value=<%= "two".equals(s1) ?  "checked" : "" %> /> 
-      			<label for="r2">two</label>  
+      			<input id="r2" type="radio" name="s1" value="two" >
+      			<label for="s1">two</label>  
       			  
-      			<input id="r2" type="radio" name="s1" value=<%= "three".equals(s1) ?  "checked" : "" %> /> 
-      			<label for="r2">three</label>  
-
+      			<input id="r2" type="radio" name="s1" value="three" >
+				<label for="s1">three</label> 
 		</div>
 		<div>
 			<input type="text" value="<%=s1%>" />

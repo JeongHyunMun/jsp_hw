@@ -27,21 +27,21 @@ button {
 	<form>
 		<div>
 			<selct name = "s1">
-      			<input id="r1" type="radio" name="s1" value=<%= "one" %> checked /> 
+      			<input id="r1" type="radio" name="s1" value=<%= s1 %> checked /> 
       			<label for="r1">one</label>
       
-      			<input id="r2" type="radio" name="s1" value=<%= "two" %> checked/> 
+      			<input id="r2" type="radio" name="s1" value=<%= s1 %> /> 
       			<label for="r2">two</label>  
       			  
-      			<input id="r2" type="radio" name="s1" value=<%= "three"%> checked /> 
+      			<input id="r2" type="radio" name="s1" value=<%= s1%> /> 
       			<label for="r2">three</label>  
 
 		</div>
 		<div>
 			<select name="s1">
-          <option value="s1">one</option>
-          <option value="s1">two</option>
-          <option value="s1">three</option>
+          <option value=<%= s1%>>one</option>
+          <option value=<%= s1%>>two</option>
+          <option value=<%= s1%>>three</option>
       </select>    
 
 		</div>
