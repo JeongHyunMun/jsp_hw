@@ -8,6 +8,7 @@ public class Book {
 	String categoryId;
 	int price;
 	String publisher;
+	String categoryName;
 
 	public int getId() {
 		return id;
@@ -55,6 +56,14 @@ public class Book {
 
 	public void setPublisher(String publisher) {
 		this.publisher = publisher;
+	}
+
+	public String getCategoryName() {
+		return categoryName;
+	}
+
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
 	}
 
 }
