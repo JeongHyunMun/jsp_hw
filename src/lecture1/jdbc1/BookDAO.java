@@ -11,8 +11,8 @@ import lecture1.DB;
 public class BookDAO {
 
     public static List<Book> findAll() throws Exception {
-        String sql = "SELECT b.*, c.categoryName " +
-                     "FROM book b LEFT JOIN category c ON b.categoryId = c.id";
+        String sql = "SELECT s.*, d.categoryName " +
+                     "FROM book s LEFT JOIN category d ON s.categoryId = d.id";
         try (Connection connection = DB.getConnection("book");
              PreparedStatement statement = connection.prepareStatement(sql);
              ResultSet resultSet = statement.executeQuery()) {
