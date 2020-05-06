@@ -21,7 +21,7 @@ List<Book> list = BookDAO2.findByAuthor(srchText);
   </style>
 </head>
 <body>
-
+ 
 <div class="container">
 
 <h1>책목록</h1>

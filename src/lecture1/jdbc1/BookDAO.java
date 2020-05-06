@@ -8,7 +8,7 @@ import java.util.List;
 
 import lecture1.DB;
 
-public class BookDAO {
+public class BookDAO {//
 
     public static List<Book> findAll() throws Exception {
         String sql = "SELECT s.*, d.categoryName " +

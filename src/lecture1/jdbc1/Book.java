@@ -1,4 +1,4 @@
-package lecture1.jdbc1; //
+package lecture1.jdbc1;
 
 public class Book {
 

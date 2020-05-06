@@ -14,7 +14,7 @@ List<Book> list = BookDAO.findAll();
     td, th { padding: 4px; border: 1px solid lightgray; }
     td:nth-child(4) { text-align: center; }
   </style>
-</head>
+</head> 
 <body>
 <div class="container">
 
