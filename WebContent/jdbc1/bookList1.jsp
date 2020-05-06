@@ -36,8 +36,8 @@ List<Book> list = BookDAO.findAll();
               <tr>
                   <td><%= book.getId() %></td>
                   <td><%= book.getTitle() %></td>
-                  <td><%= book.getName() %></td>
-                  <td><%= book.getCategory() %></td>
+                  <td><%= book.getAuthor() %></td>
+                  <td><%= book.getCategoryId() %></td>
                   <td><%= book.getPrice() %></td>
                   <td><%= book.getPublisher() %></td>
               </tr>

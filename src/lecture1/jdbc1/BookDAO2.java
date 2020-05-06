@@ -15,8 +15,8 @@ public class BookDAO2 {
 		Book book = new Book();
 		book.setId(resultSet.getInt("id"));
 		book.setTitle(resultSet.getString("title"));
-		book.setName(resultSet.getString("name"));
-		book.setCategory(resultSet.getString("category"));
+		book.setAuthor(resultSet.getString("author"));
+		book.setCategoryId(resultSet.getString("categoryId"));
 		book.setPrice(resultSet.getInt("price"));
 		book.setPublisher(resultSet.getString("publisher"));
 		return book;
@@ -35,7 +35,7 @@ public class BookDAO2 {
 		}
 	}
 
-	public static List<Book> findByName(String name) throws Exception {
+	public static List<Book> findByAuthor(String author) throws Exception {
 		String sql = "SELECT b.*, c.categoryName " +
 				     "FROM book b LEFT JOIN category c ON b.categoryId = c.id";
 		try (Connection connection = DB.getConnection("book");

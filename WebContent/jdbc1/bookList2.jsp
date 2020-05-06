@@ -3,7 +3,7 @@
 <%
 String srchText = request.getParameter("srchText");
 if (srchText == null) srchText = "";
-List<Book> list = BookDAO2.findByName(srchText);
+List<Book> list = BookDAO2.findByAuthor(srchText);
 %>
 <!DOCTYPE html>
 <html>
@@ -47,8 +47,8 @@ List<Book> list = BookDAO2.findByName(srchText);
               <tr>
                   <td><%= book.getId() %></td>
                   <td><%= book.getTitle() %></td>
-                  <td><%= book.getName() %></td>
-                  <td><%= book.getCategory() %></td>
+                  <td><%= book.getAuthor() %></td>
+                  <td><%= book.getCategoryId() %></td>
                   <td><%= book.getPrice() %></td>
                   <td><%= book.getPublisher() %></td>
             </tr>
