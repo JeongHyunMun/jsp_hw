@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.List, lecture1.jdbc1.*" %>
 <%
-String author = "";
+String s = request.getParameter("author");
+int author = Integer.parseInt(s);
 Book book = BookDAO2.findByAuthor(author);
 %>
 <!DOCTYPE html>

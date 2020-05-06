@@ -4,6 +4,7 @@
 String srchText = request.getParameter("srchText");
 if (srchText == null) srchText = "";
 List<Book> list = BookDAO2.findByAuthor(srchText);
+
 %>
 <!DOCTYPE html>
 <html>
