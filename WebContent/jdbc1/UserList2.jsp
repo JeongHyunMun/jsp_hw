@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.List, lecture1.jdbc1.*" %>
 <%
-String srchText = request.getParameter("srchText");
+	String srchText = request.getParameter("srchText");
 if (srchText == null) srchText = "";
 List<User> list = UserDAO2.findByName(srchText);
 %>
@@ -44,8 +44,8 @@ List<User> list = UserDAO2.findByName(srchText);
     <tbody>
         <% for (User user : list) { %>
             <tr>
-                <td><%= user.getUserid() %></td>
-                <td><%= user.getName() %></td>
+            	<td><%= user.getUserid() %></td>
+                <td><a href="user1.jsp?id=<%= user.getId() %>"><%=user.getName() %></a></td>
                 <td><%= user.getEmail() %></td>
                 <td><%= user.getDepartmentName() %></td>
                 <td><%= user.getUserType() %></td>

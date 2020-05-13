@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.List, lecture1.jdbc1.*" %>
 <%
-String s = request.getParameter("id");
+	String s = request.getParameter("id");
 int id = Integer.parseInt(s);
-User user = UserDAO3.findById(id);
+User user = UserDAO2.findById(id);
 %>
 <!DOCTYPE html>
 <html>
@@ -50,6 +50,7 @@ User user = UserDAO3.findById(id);
   </tr>
 </table>
 
+<a href="javascript:window.history.back()" class="btn btn-info">돌아가기</a>
 </div>
 </body>
 </html>
